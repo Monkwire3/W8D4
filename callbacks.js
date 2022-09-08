@@ -8,11 +8,10 @@
 class Clock {
   constructor() {
     this.currentDateInSeconds = Date.now()
-    setInterval ( () => { 
+    setInterval(() => { 
       this._tick()
       this.printTime()
-  }, 1000 )
-
+    }, 1000);
   }
 
   printTime() {
@@ -32,5 +31,5 @@ function addNumbers(sum, numsLeft, completeCallback) {
     });     
     numsLeft--;
   };
-};
+}
 
