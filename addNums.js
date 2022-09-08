@@ -1,9 +1,9 @@
-const readline = require('readline');
+// const readline = require('readline');
 
-const reader = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// const reader = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
 // function printInput () {
 //   reader.question("Mockingbird!! ", (response) => {
