@@ -1,8 +1,8 @@
-const readline = require('readline');
-const reader = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// const readline = require('readline');
+// const reader = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
 
 class Clock {
@@ -25,23 +25,12 @@ class Clock {
   }
 }
 
-// function addNumbers(sum, numsLeft, completeCallback) {
-  // while (numsLeft > 0) {
-    // reader.question("Enter a number: ", (res) => {
-      // completeCallback(res);
-    // });
-     
-    // numsLeft--;
-  // };
-// };
-
-function incrementSum(res) {
-  num = parseInt(res);
-  sum += num;
-  console.log(sum);
-  numsLeft --;
-  addNumbers(sum, numsLeft, incrementSum);
+function addNumbers(sum, numsLeft, completeCallback) {
+  while (numsLeft > 0) {
+    reader.question("Enter a number: ", (res) => {
+      completeCallback(res);
+    });     
+    numsLeft--;
+  };
 };
 
-
-const myVar = 'var';
